@@ -1,0 +1,15 @@
+# Example only. No Cloudflare resources are created by this file.
+# Obtain the real D1 database ID only after deployment/cost approval.
+name = "stay-concierge-demo"
+compatibility_date = "2026-10-01"
+pages_build_output_dir = "dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "stay-concierge-demo"
+database_id = "REPLACE_WITH_APPROVED_DEMO_DATABASE_ID"
+migrations_dir = "migrations"
+
+[vars]
+APP_ORIGIN = "https://REPLACE_WITH_CONFIRMED_DEMO_HOST"
+MAIL_MODE = "disabled"

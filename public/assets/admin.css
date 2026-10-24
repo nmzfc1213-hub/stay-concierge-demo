@@ -1,0 +1,28 @@
+.admin-main { max-width: 1040px; }
+#admin-tabs { display: flex; gap: 8px; flex-wrap: wrap; padding: 20px 0; border-bottom: 1px solid var(--line); }
+#admin-tabs button { min-height: 48px; padding: 10px 16px; border: 1px solid var(--green); border-radius: 6px; background: transparent; color: var(--green); }
+#admin-tabs [aria-selected='true'] { color: white; background: var(--green); }
+#admin-content { padding-bottom: 32px; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.filters button { margin-right: 0; }
+.filters [aria-pressed='true'] { color: white; background: var(--green); }
+.reservation-card { border: 1px solid var(--line); padding: 20px; margin: 16px 0; background: #fffefa; border-radius: 6px; }
+.reservation-card h3 { font-size: 20px; margin: 8px 0; }
+.reservation-card p { margin-bottom: 10px; }
+.overdue { border: 2px solid #9b1c1c; }
+.overdue .badge { background: #fff1f0; color: #9b1c1c; font-weight: 700; padding: 8px 12px; display: inline-block; }
+.dates { white-space: nowrap; font-size: clamp(13px, 3.7vw, 18px); }
+.admin-main input:not([type='checkbox']) { display: block; width: 100%; min-height: 48px; border: 1px solid var(--muted); border-radius: 5px; padding: 10px 12px; margin-top: 8px; color: var(--ink); background: white; }
+.admin-main input[type='file'] { max-width: 100%; font-size: 14px; }
+.admin-main fieldset { border: 1px solid var(--line); margin: 20px 0; padding: 0 16px 16px; }
+.admin-main legend { font-size: 14px; padding: 0 8px; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.setting-item { border-left: 3px solid var(--green); padding-left: 16px; margin-top: 32px; }
+.admin-main pre { overflow-x: auto; background: #e8eee7; padding: 16px; font-size: 12px; }
+.admin-main details { border-bottom: 1px solid var(--line); }
+.admin-main details summary { padding: 12px 0; cursor: pointer; }
+@media (max-width: 650px) {
+  .pair { grid-template-columns: 1fr; gap: 0; }
+  #admin-tabs button { flex: 1 0 auto; padding: 10px 12px; }
+  .reservation-card { padding: 16px; }
+}

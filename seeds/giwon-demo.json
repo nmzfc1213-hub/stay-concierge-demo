@@ -1,0 +1,176 @@
+{
+  "propertyId": "property-giwon-demo",
+  "slug": "giwon-demo",
+  "name": {
+    "ja": "ぎをんの月｜非公式試作",
+    "en": "Giwon no Tsuki | Unofficial demo"
+  },
+  "contact": {
+    "phone": "075-532-5333",
+    "email": "",
+    "line": "",
+    "formUrl": "https://giwon.cc/contact.html"
+  },
+  "wifi": {
+    "ssid": "NOT-CONFIGURED-DEMO",
+    "password": "NOT-A-REAL-WIFI-PASSWORD"
+  },
+  "notificationEmail": "demo@example.invalid",
+  "guide": {
+    "items": [
+      {
+        "id": "arrival",
+        "audience": "all",
+        "title": { "ja": "到着・出発の時間", "en": "Arrival & departure" },
+        "notice": {
+          "tone": "deadline",
+          "lead": { "ja": "チェックイン 15:00–18:00", "en": "Check-in 15:00–18:00" },
+          "sourceUrl": "https://giwon.cc/fas.html"
+        },
+        "body": {
+          "ja": "公式の施設案内に掲載された受付時間です。チェックアウトは原則10:00、一部プランは11:00。到着が遅れる場合は電話でご相談ください。この試作では予約プランの照合や到着許可は行いません。",
+          "en": "Published check-in hours. Standard check-out is 10:00; some plans allow 11:00. Call if delayed. This demo does not verify your plan or approve late arrival."
+        }
+      },
+      {
+        "id": "cancellation",
+        "audience": "all",
+        "title": { "ja": "キャンセル料", "en": "Cancellation charges" },
+        "notice": {
+          "tone": "money",
+          "lead": { "ja": "当日・連絡なしの不泊：100％", "en": "Same-day cancellation / no-show: 100%" },
+          "sourceUrl": "https://giwon.cc/terms.html"
+        },
+        "body": {
+          "ja": "公開案内の目安は、宿泊2〜7日前50％、前日80％。約款では比率の対象を基本宿泊料としています。これは予約別の請求額ではありません。実際の適用条件は予約確認書と宿へ確認してください。ここでの確認は予約条件を変更しません。",
+          "en": "Published schedule: 2–7 days before arrival 50%; previous day 80%. The terms use the basic accommodation charge as the calculation base. Check your booking terms with the property; this is not a bill or a change to your booking."
+        }
+      },
+      {
+        "id": "charges",
+        "audience": "all",
+        "title": { "ja": "事前振込の対象になる予約", "en": "Bookings requiring advance payment" },
+        "notice": {
+          "tone": "money",
+          "lead": { "ja": "対象予約は、宿からの振込案内をご確認ください", "en": "If applicable, follow the property’s payment instructions" },
+          "sourceUrl": "https://giwon.cc/fas.html"
+        },
+        "body": {
+          "ja": "現地決済の予約でも、土曜・連休・特別期間や高額な連泊・団体利用では事前振込を求める掲載があります。対象・金額・期日は宿からの案内で確認。この試作は振込依頼・決済・入金確認をしません。宿泊税の金額も未設定です。",
+          "en": "Some pay-at-property stays require advance transfer, including Saturdays, holidays, special periods or high-value stays. Confirm applicability, amount and deadline with the property. This demo takes no payment and has no accommodation-tax amount configured."
+        }
+      },
+      {
+        "id": "rules",
+        "audience": "all",
+        "title": { "ja": "禁煙と清掃費の規定", "en": "Smoking & cleaning charges" },
+        "notice": {
+          "tone": "money",
+          "lead": { "ja": "客室喫煙等：清掃費30,000円の規定", "en": "Room-smoking violations: ¥30,000 cleaning provision" },
+          "sourceUrl": "https://giwon.cc/terms.html"
+        },
+        "body": {
+          "ja": "館内は禁煙で、加熱式たばこも対象です。客室喫煙・吸い殻等の持込について、退館・清掃費や破損時の追加請求の規定があります。判定基準を含む詳細は公式約款をご確認ください。試作で請求は発生しません。",
+          "en": "Indoor smoking restrictions include heated tobacco. The terms describe departure, cleaning and additional damage charges for room-smoking violations or bringing in cigarette ends. Read the full criteria in the official terms. This demo issues no charges."
+        }
+      },
+      {
+        "id": "dinner",
+        "audience": "dinner",
+        "title": { "ja": "夕食の開始とご案内順", "en": "Dinner start time" },
+        "notice": {
+          "tone": "deadline",
+          "lead": { "ja": "夕食開始 17:30–18:30", "en": "Dinner starts 17:30–18:30" },
+          "sourceUrl": "https://giwon.cc/meal.html"
+        },
+        "body": {
+          "ja": "食事開始枠はチェックイン順で案内され、事前指定はできないとの掲載です。食事処は21:00まで。遅い到着の扱いは事前に宿へ確認してください。",
+          "en": "Start slots are assigned in check-in order, without advance time selection. Dining closes at 21:00. Ask the property about delayed arrival."
+        }
+      },
+      {
+        "id": "drinks",
+        "audience": "dinner",
+        "title": { "ja": "食事処への飲料持込み", "en": "Bringing drinks into the dining area" },
+        "notice": {
+          "tone": "money",
+          "lead": { "ja": "飲料持込み：追加料金3,000円の掲載", "en": "Outside drinks: published charge ¥3,000" },
+          "sourceUrl": "https://giwon.cc/meal.html"
+        },
+        "body": {
+          "ja": "対象は食事処への持込みです。予約時の相談が案内されています。1本・1組などの料金単位は公開文面だけでは確定できず、宿への確認が必要です。客室内の飲食へ同じ料金を適用する案内ではありません。",
+          "en": "This concerns drinks brought into the dining area. Consult the property when booking; the charging unit needs confirmation. It is not a general charge for consuming drinks in your room."
+        }
+      },
+      {
+        "id": "diet",
+        "audience": "dinner",
+        "title": { "ja": "食事制限・アレルギーの相談", "en": "Dietary restrictions & allergies" },
+        "notice": {
+          "tone": "deadline",
+          "lead": { "ja": "アレルギー：宿泊4日前までに宿へ相談", "en": "Allergies: contact the property at least 4 days before arrival" },
+          "sourceUrl": "https://giwon.cc/pdf/allergy_detail.pdf"
+        },
+        "body": {
+          "ja": "公式資料は直前・当日の対応不可や混入の可能性を案内しています。ベジタリアン・ビーガン・宗教上の食事制限は食事ページで対応不可の掲載。申告だけで食事対応や安全性が確約されることはありません。必ず公式資料と宿への直接相談をご利用ください。",
+          "en": "The official allergy document states advance-notice limits and cross-contact risk. The meal page says vegetarian, vegan and religious dietary requirements cannot be accommodated. Submitting a request does not guarantee accommodation or safety; consult the property directly."
+        }
+      }
+    ],
+    "info": [
+      {
+        "id": "celebration-orders",
+        "audience": "dinner",
+        "title": { "ja": "お祝いケーキ・デザート変更の締切", "en": "Celebration-order deadlines" },
+        "notice": {
+          "tone": "deadline",
+          "lead": { "ja": "ケーキ：宿泊2日前12:00まで\nデザート変更：前日12:00まで", "en": "Cake: 12:00 two days before arrival\nDessert upgrade: 12:00 the previous day" },
+          "sourceUrl": "https://giwon.cc/meal.html"
+        },
+        "body": { "ja": "注文は宿への電話で確認します。繁忙日など受付できない場合があります。一般の別注料理の17時締切とは別の案内です。この試作から注文は確定しません。", "en": "Order by calling the property; availability may be restricted. These are not a general 17:00 special-dish deadline. This demo does not place an order." }
+      },
+      {
+        "id": "private-bath",
+        "audience": "all",
+        "title": { "ja": "貸切風呂", "en": "Private baths" },
+        "body": { "ja": "受付時間は16:00–24:00。利用枠はチェックイン時の予約です。公式の風呂ページでは、舞姫ノ間・古都ノ間に1回45分無料との掲載。他の客室への適用は確認が必要です。", "en": "Reservations are taken at check-in, with reception listed as 16:00–24:00. The bath page lists one free 45-minute session for Maihime and Koto rooms. Other-room eligibility needs confirmation." }
+      },
+      {
+        "id": "parking",
+        "audience": "all",
+        "title": { "ja": "駐車場・アクセス", "en": "Parking & access" },
+        "body": { "ja": "専用駐車場はありません。近隣の有料駐車場をご利用ください。祇園四条駅から徒歩約9分。経路は公式の交通案内で確認できます。", "en": "There is no dedicated parking. Use nearby paid parking. Gion-Shijo Station is about a 9-minute walk; consult the official access page." }
+      }
+    ],
+    "arrivalSlots": [
+      { "id": "15-16", "label": { "ja": "15:00–16:00", "en": "15:00–16:00" } },
+      { "id": "16-17", "label": { "ja": "16:00–17:00", "en": "16:00–17:00" } },
+      { "id": "17-18", "label": { "ja": "17:00–18:00", "en": "17:00–18:00" } },
+      { "id": "18-20", "requiresContact": true, "label": { "ja": "18:00以降・20:00未満（要相談）", "en": "18:00–19:59 (contact the property)" } },
+      { "id": "late", "requiresContact": true, "label": { "ja": "20:00以降（要相談・夕食可否未確認）", "en": "20:00 or later (contact property; dinner unconfirmed)" } },
+      { "id": "unknown", "label": { "ja": "未定", "en": "Not decided yet" } }
+    ]
+  },
+  "research": {
+    "checkedOn": "2026-10-20",
+    "status": "unofficial_prototype_property_approval_pending",
+    "sources": [
+      "https://maxjapan.co.jp/ryokan/giwon.html",
+      "https://giwon.cc/fas.html",
+      "https://giwon.cc/meal.html",
+      "https://giwon.cc/terms.html",
+      "https://giwon.cc/bath.html",
+      "https://giwon.cc/access.html",
+      "https://giwon.cc/contact.html",
+      "https://giwon.cc/pdf/allergy_detail.pdf"
+    ],
+    "pending": [
+      { "id": "late-dinner", "origin": "user_example", "text": "20時以降は料理提供不可・減額なし", "reason": "公開ページではこの時刻と減額条件の組合せを確認できていない" },
+      { "id": "special-orders", "origin": "user_example", "text": "別注料理は当日17時まで", "reason": "一般の別注料理の締切は未確認。ケーキ等の公開締切とは別に確認する" },
+      { "id": "curfew", "origin": "official_conflict", "text": "門限：施設案内は午前1時、約款は午後11時", "reason": "公式ページ内で不一致。現在の運用を確認するまで断定しない" },
+      { "id": "dining-hours", "origin": "official_conflict", "text": "夕食開始・朝食時間にページ間差異", "reason": "試作は食事専用ページの時刻を参照するが、宿の承認前であることを明記" },
+      { "id": "bath-eligibility", "origin": "official_scope", "text": "貸切風呂の無料対象", "reason": "トップの一般的な表現より、風呂ページの客室限定の記載を優先して対象を広げない" },
+      { "id": "payment", "origin": "missing", "text": "対象日・支払期限・請求単位・税額・予約別の条件", "reason": "予約プランやOTAとの照合、決済や入金確認は未実装。銀行情報を作らない" }
+    ]
+  }
+}

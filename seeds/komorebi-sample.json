@@ -1,0 +1,246 @@
+{
+  "propertyId": "property-komorebi-sample",
+  "slug": "komorebi-sample",
+  "name": {
+    "ja": "サンプル旅館 こもれび庵",
+    "en": "Komorebi-an | Sample Ryokan"
+  },
+  "contact": {
+    "phone": "",
+    "email": "",
+    "line": "",
+    "formUrl": ""
+  },
+  "wifi": {
+    "ssid": "NOT-CONFIGURED-DEMO",
+    "password": "NOT-A-REAL-WIFI-PASSWORD"
+  },
+  "notificationEmail": "demo@example.invalid",
+  "guide": {
+    "items": [
+      {
+        "id": "arrival",
+        "audience": "all",
+        "title": {
+          "ja": "到着・出発の時間",
+          "en": "Arrival & departure"
+        },
+        "notice": {
+          "tone": "deadline",
+          "lead": {
+            "ja": "チェックイン15:00–18:00／チェックアウト10:00（設定例）",
+            "en": "Check-in 15:00–18:00 / check-out 10:00 (example)"
+          }
+        },
+        "body": {
+          "ja": "到着が18時を過ぎる場合は、宿へ事前にご相談ください。予約プランによって条件が異なる想定です。ここで時刻を選んでも遅い到着が承認されるわけではありません。",
+          "en": "Contact the property in advance if arriving after 18:00. Conditions may vary by booking plan. Selecting a time does not approve late arrival."
+        }
+      },
+      {
+        "id": "cancellation",
+        "audience": "all",
+        "title": {
+          "ja": "キャンセル料",
+          "en": "Cancellation charges"
+        },
+        "notice": {
+          "tone": "money",
+          "lead": {
+            "ja": "取消料：予約プランの条件を確認（設定例）",
+            "en": "Cancellation: check your booking terms (example)"
+          }
+        },
+        "body": {
+          "ja": "例として、前日50％・当日100％のプランを想定しています。これは架空の条件で、請求は発生しません。実際の宿では予約経路・プランごとの条件を案内します。",
+          "en": "This fictional plan uses 50% the previous day and 100% on arrival day. No charges are made. Real properties must show the terms for the actual booking channel and plan."
+        }
+      },
+      {
+        "id": "charges",
+        "audience": "all",
+        "title": {
+          "ja": "事前振込の対象になる予約",
+          "en": "Bookings requiring advance payment"
+        },
+        "notice": {
+          "tone": "money",
+          "lead": {
+            "ja": "支払い方法は予約確認書を確認（設定例）",
+            "en": "Check payment instructions in your booking (example)"
+          }
+        },
+        "body": {
+          "ja": "現地払い・事前払いなど、予約プランに応じて案内する想定です。このサンプルは送金・カード入力・決済・入金確認を行いません。",
+          "en": "Payment instructions depend on the booking plan. This sample does not accept transfers, card details or payments, or verify payment."
+        }
+      },
+      {
+        "id": "rules",
+        "audience": "all",
+        "title": {
+          "ja": "禁煙と清掃費の規定",
+          "en": "Smoking & cleaning charges"
+        },
+        "notice": {
+          "tone": "money",
+          "lead": {
+            "ja": "館内禁煙（設定例）",
+            "en": "No smoking indoors (example)"
+          }
+        },
+        "body": {
+          "ja": "電子たばこ・加熱式たばこを含む禁煙の設定例です。喫煙場所や違反時の扱いは、導入先の規定に差し替えます。このサンプルで清掃費は請求しません。",
+          "en": "This example includes electronic cigarettes and heated tobacco in the smoking restriction. Smoking areas and violation procedures must be adapted for each property. No cleaning fees are charged by this sample."
+        }
+      },
+      {
+        "id": "dinner",
+        "audience": "dinner",
+        "title": {
+          "ja": "夕食の開始とご案内順",
+          "en": "Dinner start time"
+        },
+        "notice": {
+          "tone": "deadline",
+          "lead": {
+            "ja": "夕食開始18:00／18:30（設定例）",
+            "en": "Dinner starts at 18:00 / 18:30 (example)"
+          }
+        },
+        "body": {
+          "ja": "夕食付きの方にだけ表示する案内です。開始時刻は宿と確認して決める想定で、このサンプルから予約は確定しません。遅れる場合は事前にご相談ください。",
+          "en": "Shown only for bookings with dinner. Meal times require property confirmation and cannot be booked through this sample. Contact the property in advance if delayed."
+        }
+      },
+      {
+        "id": "drinks",
+        "audience": "dinner",
+        "title": {
+          "ja": "食事処への飲料持込み",
+          "en": "Bringing drinks into the dining area"
+        },
+        "notice": {
+          "tone": "money",
+          "lead": {
+            "ja": "食事処への飲料持込みは事前相談（設定例）",
+            "en": "Discuss outside drinks in advance (example)"
+          }
+        },
+        "body": {
+          "ja": "飲料の持込み可否・料金・対象範囲は施設ごとに設定します。このサンプルは料金を計算したり、持込みを承認したりしません。",
+          "en": "Outside-drink rules, fees and scope must be set for each property. This sample does not calculate fees or approve outside drinks."
+        }
+      },
+      {
+        "id": "diet",
+        "audience": "dinner",
+        "title": {
+          "ja": "食事制限・アレルギーの相談",
+          "en": "Dietary restrictions & allergies"
+        },
+        "notice": {
+          "tone": "deadline",
+          "lead": {
+            "ja": "食事・アレルギーは下のヒアリングから（設定例）",
+            "en": "Use the dietary interview below (example)"
+          }
+        },
+        "body": {
+          "ja": "食材・症状・微量混入などを事前に伺い、宿が対応できるか確認するための画面です。申告だけで対応・安全性は確約されません。共用調理場・器具・ゆで釜等での交差接触も宿への確認が必要です。架空情報のみ入力してください。",
+          "en": "The interview collects ingredients, symptoms and cross-contact needs for property review. Submitting answers does not guarantee arrangements or safety. Shared kitchens, equipment and cooking water require direct property confirmation. Use fictional details only."
+        }
+      }
+    ],
+    "info": [
+      {
+        "id": "celebration-orders",
+        "audience": "dinner",
+        "title": {
+          "ja": "お祝いケーキ・デザート変更の締切",
+          "en": "Celebration-order deadlines"
+        },
+        "body": {
+          "ja": "ケーキなどの追加注文は宿へ事前相談する設定例です。このサンプルから注文できません。",
+          "en": "Discuss celebration orders in advance. This sample does not place orders."
+        }
+      },
+      {
+        "id": "private-bath",
+        "audience": "all",
+        "title": {
+          "ja": "貸切風呂",
+          "en": "Private baths"
+        },
+        "body": {
+          "ja": "貸切風呂はチェックイン時に空きを確認する設定例です。この画面では予約できません。",
+          "en": "Private-bath availability is checked at reception in this example. This screen does not reserve a bath."
+        }
+      },
+      {
+        "id": "parking",
+        "audience": "all",
+        "title": {
+          "ja": "駐車場・アクセス",
+          "en": "Parking & access"
+        },
+        "body": {
+          "ja": "駐車台数・料金・アクセス方法を施設ごとに設定する欄です。実在の施設や駐車場の案内ではありません。",
+          "en": "Parking availability, prices and access instructions are customized for each property. No real parking or location is described."
+        }
+      }
+    ],
+    "arrivalSlots": [
+      {
+        "id": "15-16",
+        "label": {
+          "ja": "15:00–16:00",
+          "en": "15:00–16:00"
+        }
+      },
+      {
+        "id": "16-17",
+        "label": {
+          "ja": "16:00–17:00",
+          "en": "16:00–17:00"
+        }
+      },
+      {
+        "id": "17-18",
+        "label": {
+          "ja": "17:00–18:00",
+          "en": "17:00–18:00"
+        }
+      },
+      {
+        "id": "18-20",
+        "requiresContact": true,
+        "label": {
+          "ja": "18:00以降・20:00未満（要相談）",
+          "en": "18:00–19:59 (contact the property)"
+        }
+      },
+      {
+        "id": "late",
+        "requiresContact": true,
+        "label": {
+          "ja": "20:00以降（要相談・夕食可否未確認）",
+          "en": "20:00 or later (contact property; dinner unconfirmed)"
+        }
+      },
+      {
+        "id": "unknown",
+        "label": {
+          "ja": "未定",
+          "en": "Not decided yet"
+        }
+      }
+    ]
+  },
+  "research": {
+    "checkedOn": "2026-10-25",
+    "status": "fictional_sample",
+    "sources": [],
+    "pending": []
+  }
+}

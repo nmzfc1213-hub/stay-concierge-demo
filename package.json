@@ -1,0 +1,11 @@
+{
+  "name": "stay-concierge-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/admin.test.js tests/final-security.test.js tests/frontdesk-upgrade.test.js tests/giwon.test.js tests/stage2.test.js tests/meal-api.test.js tests/meal-guest.test.js tests/meal-preview/*.cjs",
+    "build": "node scripts/build.js",
+    "seed:demo": "node scripts/seed-stage2.js",
+    "seed:giwon": "node scripts/seed-stage2.js giwon"
+  }
+}

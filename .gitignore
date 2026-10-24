@@ -1,0 +1,28 @@
+# Build output and installed dependencies
+dist/
+node_modules/
+.wrangler/
+
+# Local configuration, private reservation links and generated SQL
+.local/
+.env*
+.dev.vars
+.dev.vars.*
+wrangler.toml
+
+# Local database files and private keys
+*.sqlite
+*.sqlite3
+*.db
+*.sqlite-*
+*.sqlite3-*
+*.db-*
+*.pem
+*.key
+
+# Local logs, backups and operating-system metadata
+*.log
+*.bundle
+*.zip
+.DS_Store
+Thumbs.db

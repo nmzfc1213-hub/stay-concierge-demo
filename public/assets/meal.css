@@ -1,0 +1,89 @@
+
+#giwon-stay { padding:12px 0; color-scheme:light dark; }
+#giwon-stay * { box-sizing:border-box; }
+#giwon-stay .sc-shell { --sc-paper:light-dark(#f7f6f0,#171e1b); --sc-card:light-dark(#fffefa,#222d27); --sc-ink:light-dark(#253e36,#ecf1ea); --sc-muted:light-dark(#52614f,#b7c7b4); --sc-green:light-dark(#234a40,#c9e7d7); --sc-on-green:light-dark(#ffffff,#18372c); --sc-line:light-dark(#b9c1b5,#667d6b); --sc-warn:light-dark(#794900,#f8d79d); --sc-warn-bg:light-dark(#fff8e6,#382f20); --sc-error:light-dark(#9b1c1c,#ffb9b3); --sc-error-bg:light-dark(#fff1f0,#3b2526); max-width:760px; margin:auto; border:1px solid var(--sc-line); border-radius:16px; overflow:hidden; background:var(--sc-paper); color:var(--sc-ink); font:16px/1.75 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; overflow-wrap:anywhere; }
+#giwon-stay .sc-preview-label { padding:9px 18px; font-size:12px; color:var(--sc-warn); background:var(--sc-warn-bg); text-align:center; }
+#giwon-stay .sc-header { display:flex; justify-content:space-between; align-items:center; padding:24px; gap:12px; }
+#giwon-stay .sc-brand { font-size:12px; letter-spacing:.12em; font-weight:500; }
+#giwon-stay .sc-brand span { display:block; font-size:11px; letter-spacing:.08em; color:var(--sc-muted); }
+#giwon-stay button,#giwon-stay input,#giwon-stay select,#giwon-stay textarea { font:inherit; }
+#giwon-stay button { min-height:44px; border:1px solid var(--sc-green); border-radius:6px; padding:8px 14px; color:var(--sc-green); background:transparent; touch-action:manipulation; }
+#giwon-stay button[aria-pressed='true'],#giwon-stay .sc-primary { background:var(--sc-green); color:var(--sc-on-green); }
+#giwon-stay button:disabled { opacity:.5; }
+#giwon-stay .sc-languages { display:flex; gap:4px; flex-shrink:0; }
+#giwon-stay .sc-languages button { padding:6px 10px; font-size:13px; }
+#giwon-stay .sc-view-switch { display:flex; gap:8px; margin:0 24px; }
+#giwon-stay .sc-view-switch button { flex:1; font-size:14px; }
+#giwon-stay .sc-main { padding:28px 24px 4px; }
+#giwon-stay h1,#giwon-stay h2 { font-family:'Hiragino Mincho ProN','Yu Mincho',Georgia,serif; font-weight:500; }
+#giwon-stay h1 { font-size:clamp(25px,5vw,34px); margin:4px 0 12px; line-height:1.5; }
+#giwon-stay h2 { font-size:clamp(22px,4vw,28px); margin:12px 0 20px; line-height:1.5; }
+#giwon-stay h3 { font-size:17px; font-weight:500; margin:0 0 10px; }
+#giwon-stay p { margin:0 0 16px; }
+#giwon-stay .sc-eyebrow { color:var(--sc-muted); font-size:11px; letter-spacing:.13em; margin-bottom:6px; }
+#giwon-stay .sc-subtitle { color:var(--sc-muted); }
+#giwon-stay .sc-card { background:var(--sc-card); border:1px solid var(--sc-line); border-radius:8px; padding:24px; margin:20px 0; }
+#giwon-stay .sc-booking { display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px; padding-bottom:14px; border-bottom:1px solid var(--sc-line); font-size:13px; }
+#giwon-stay .sc-steps { list-style:none; display:flex; gap:6px; flex-wrap:wrap; margin:20px 0; padding:0; }
+#giwon-stay .sc-steps li { font-size:11px; padding:4px 8px; background:var(--sc-paper); color:var(--sc-muted); border-radius:4px; }
+#giwon-stay .sc-steps [aria-current='step'] { color:var(--sc-on-green); background:var(--sc-green); }
+#giwon-stay .sc-time { white-space:nowrap; font-size:clamp(16px,4vw,21px); }
+#giwon-stay .sc-check { display:flex; align-items:flex-start; gap:12px; min-height:44px; padding:16px 0; }
+#giwon-stay .sc-check input { flex-shrink:0; width:24px; height:24px; margin-top:3px; accent-color:var(--sc-green); }
+#giwon-stay .sc-actions { display:flex; gap:8px; flex-wrap:wrap; margin-top:16px; }
+#giwon-stay .sc-actions button { flex:1 1 auto; }
+#giwon-stay .sc-actions .sc-primary { min-height:50px; }
+#giwon-stay .sc-note { font-size:13px; color:var(--sc-muted); }
+#giwon-stay .sc-warning { padding:12px 16px; background:var(--sc-warn-bg); color:var(--sc-warn); border-left:3px solid var(--sc-warn); font-size:14px; }
+#giwon-stay .sc-alert { padding:12px 16px; background:var(--sc-error-bg); color:var(--sc-error); border-left:3px solid var(--sc-error); font-size:14px; }
+#giwon-stay label.sc-field { display:block; margin:18px 0; }
+#giwon-stay .sc-field input,#giwon-stay .sc-field select,#giwon-stay .sc-field textarea { display:block; width:100%; min-height:48px; padding:10px; margin-top:6px; border:1px solid var(--sc-muted); border-radius:5px; color:var(--sc-ink); background:var(--sc-card); font-size:16px; }
+#giwon-stay .sc-field textarea { min-height:110px; resize:vertical; }
+#giwon-stay .sc-review { white-space:pre-wrap; padding:12px 0; border-bottom:1px solid var(--sc-line); }
+#giwon-stay .sc-contact { display:flex; gap:10px; flex-wrap:wrap; }
+#giwon-stay .sc-contact a { color:var(--sc-green); display:inline-flex; align-items:center; min-height:44px; }
+#giwon-stay details { margin-top:20px; border-top:1px solid var(--sc-line); padding-top:10px; }
+#giwon-stay summary { min-height:44px; padding:8px 0; }
+#giwon-stay .sc-wifi-row { display:flex; justify-content:space-between; align-items:center; gap:8px; padding:8px 0; }
+#giwon-stay .sc-wifi-row code { display:block; user-select:all; font-size:14px; }
+#giwon-stay .sc-success { color:var(--sc-green); font-size:36px; }
+#giwon-stay .sc-count { display:flex; gap:16px; flex-wrap:wrap; margin:18px 0; color:var(--sc-muted); font-size:14px; }
+#giwon-stay .sc-count strong { color:var(--sc-ink); font-size:24px; font-weight:500; margin-right:4px; }
+#giwon-stay .sc-filter { display:flex; flex-wrap:wrap; gap:6px; }
+#giwon-stay .sc-filter button { font-size:13px; }
+#giwon-stay .sc-admin-card { padding:18px; }
+#giwon-stay .sc-admin-card.sc-urgent { border-color:var(--sc-error); }
+#giwon-stay .sc-dates { white-space:nowrap; font-size:clamp(12px,3.3vw,15px); }
+#giwon-stay .sc-footer { padding:20px; font-size:11px; color:var(--sc-muted); text-align:center; }
+#giwon-stay .sc-saved { color:var(--sc-green); font-size:13px; }
+#giwon-stay .sc-bottom { margin-top:28px; padding-top:20px; border-top:1px solid var(--sc-line); }
+#giwon-stay .sc-policy { margin:18px 0; padding:18px; border-left:4px solid var(--sc-warn); background:var(--sc-warn-bg); color:var(--sc-warn); }
+#giwon-stay .sc-policy.sc-money { border-color:var(--sc-error); background:var(--sc-error-bg); color:var(--sc-error); }
+#giwon-stay .sc-policy-label { font-size:12px; margin-bottom:6px; }
+#giwon-stay .sc-policy-lead { font-size:clamp(23px,5.8vw,30px); line-height:1.5; font-weight:500; white-space:pre-line; margin-bottom:10px; }
+#giwon-stay .sc-policy-lead .sc-time { font-size:inherit; }
+#giwon-stay .sc-policy a { display:inline-flex; min-height:44px; align-items:center; color:inherit; font-size:12px; }
+#giwon-stay .sc-topics { display:flex; flex-wrap:wrap; gap:8px; padding:12px 0; }
+#giwon-stay .sc-topic { border:1px solid var(--sc-line); border-radius:4px; color:var(--sc-muted); padding:6px 10px; font-size:12px; }
+@media(max-width:400px) { #giwon-stay .sc-header { padding:18px 14px; } #giwon-stay .sc-main { padding:22px 14px 4px; } #giwon-stay .sc-card { padding:18px 14px; } #giwon-stay .sc-view-switch { margin:0 14px; } #giwon-stay .sc-brand { font-size:11px; letter-spacing:.05em; } }
+@media(prefers-reduced-motion:reduce) { #giwon-stay * { transition:none!important; animation:none!important; } }
+
+html { color-scheme: light dark; }
+body { margin:0; padding:0 12px; background:light-dark(#f7f6f0,#171e1b); }
+button { cursor:pointer; }
+:focus-visible { outline:3px solid #b7791f; outline-offset:3px; }
+[hidden] { display:none!important; }
+@media(max-width:400px) { body { padding:0; } #giwon-stay .sc-shell { border-radius:0; border-left:0; border-right:0; } }
+
+/* Dietary interview: existing palette, native controls and single-question cards. */
+#giwon-stay .sc-meal-options { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; margin:16px 0; }
+#giwon-stay .sc-meal-choice { border:1px solid var(--sc-line); border-radius:6px; padding:12px; margin:6px 0; cursor:pointer; align-items:center; }
+#giwon-stay .sc-meal-choice:has(input:checked) { border-color:var(--sc-green); background:var(--sc-paper); }
+#giwon-stay .sc-meal-radios { border:0; padding:0; margin:12px 0; min-width:0; }
+#giwon-stay .sc-meal-radios legend { font-size:13px; color:var(--sc-muted); }
+#giwon-stay .sc-meal-answer { margin:18px 0; padding-bottom:16px; border-bottom:1px solid var(--sc-line); }
+#giwon-stay .sc-meal-answer h3 { font-size:15px; margin:0 0 6px; }
+#giwon-stay .sc-meal-answer .sc-review { border:0; padding:0; }
+#giwon-stay .sc-meal-dates { margin-bottom:24px; }
+#giwon-stay .sc-meal-dates .sc-actions button { flex:1 1 40%; font-size:13px; }
+@media(max-width:400px) { #giwon-stay .sc-meal-options { grid-template-columns:1fr; } }

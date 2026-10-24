@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {validate,filterSections,textOf} from '../assets/model.js';
+const data=JSON.parse(await readFile(new URL('../data/demo.json',import.meta.url),'utf8'));
+test('sample has complete Japanese and English content',()=>{assert.equal(validate(data),data);for(const s of data.sections)for(const i of s.items){assert.ok(i.body.ja);assert.ok(i.body.en);}});
+test('Japanese and English guest questions find appropriate answers',()=>{assert.ok(filterSections(data,'タオル','ja').some(s=>s.id==='facilities'));assert.ok(filterSections(data,'TOWELS','en').some(s=>s.id==='facilities'));assert.equal(filterSections(data,'not-existing-query-999','en').length,0);assert.equal(filterSections(data,'  ','ja').length,data.sections.length);});
+test('rejects malformed data, duplicate IDs and missing navigation targets',()=>{for(const change of [d=>d.sections[1].id='arrival',d=>d.sections.pop(),d=>d.name.en='',d=>d.id='../secret',d=>d.sections[0].items[0].body.en=123,d=>d.wifi=null,d=>d.demo='true']){const d=structuredClone(data);change(d);assert.throws(()=>validate(d));}});
+test('content remains text rather than HTML',()=>{const d=structuredClone(data);d.name.en='<img src=x onerror=alert(1)>';validate(d);assert.equal(textOf(d.name,'en'),d.name.en);});
+test('published guide and editor render untrusted text without HTML sinks',async()=>{for(const f of ['app.js','editor.js']){const code=await readFile(new URL(`../assets/${f}`,import.meta.url),'utf8');assert.doesNotMatch(code,/innerHTML|outerHTML|insertAdjacentHTML|eval\(/);}});

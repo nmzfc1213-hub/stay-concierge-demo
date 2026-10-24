@@ -1,0 +1,145 @@
+{
+  "propertyId": "property-demo",
+  "slug": "komorebi-demo",
+  "name": {
+    "ja": "京の宿 こもれび（架空）",
+    "en": "Komorebi Kyoto (fictional)"
+  },
+  "contact": {
+    "phone": "000-0000-0000",
+    "email": "demo@example.invalid",
+    "line": ""
+  },
+  "wifi": {
+    "ssid": "Demo-Guest-Network",
+    "password": "fictional-wifi-only"
+  },
+  "notificationEmail": "demo@example.invalid",
+  "guide": {
+    "items": [
+      {
+        "id": "arrival",
+        "title": {
+          "ja": "到着時間について",
+          "en": "Arrival time"
+        },
+        "body": {
+          "ja": "このデモの受付時間は15:00–20:00です。20:00以降の夜間チェックインを希望する場合は、宿からの了承が必要です。希望を送るだけでは確約になりません。下の連絡先から宿へ直接ご相談ください。",
+          "en": "Reception hours in this demo are 15:00–20:00. Check-in after 20:00 requires the property’s approval. Sending a request does not guarantee late check-in. Please contact the property using the contact details below."
+        },
+        "audience": "all"
+      },
+      {
+        "id": "charges",
+        "title": {
+          "ja": "追加料金・宿泊税について",
+          "en": "Additional charges & accommodation tax"
+        },
+        "body": {
+          "ja": "【仮置き・デモ】追加料金・宿泊税の金額、対象、精算方法は未設定です。実運用前に宿側が予約内容に応じて確認し、この案内へ記載します。料金に不明点があれば下の連絡先から宿へお問い合わせください。",
+          "en": "DRAFT DEMO: Amounts, applicability and payment methods for additional charges and accommodation tax have not been configured. The property must verify and publish the details before real use. Contact the property below if anything is unclear."
+        },
+        "audience": "all"
+      },
+      {
+        "id": "cancellation",
+        "title": {
+          "ja": "キャンセル規定について",
+          "en": "Cancellation conditions"
+        },
+        "body": {
+          "ja": "【仮置き・デモ】この画面は予約時のキャンセル規定を変更しません。予約確認書にある条件をご確認ください。実運用前に宿側が対象予約の規定を案内へ反映します。不明点は下の連絡先から宿へお問い合わせください。",
+          "en": "DRAFT DEMO: This page does not change your booking’s cancellation conditions. Refer to your booking confirmation. The property must provide the applicable terms before real use. Contact the property below with any questions."
+        },
+        "audience": "all"
+      },
+      {
+        "id": "rules",
+        "title": {
+          "ja": "館内ルールについて",
+          "en": "House guidelines"
+        },
+        "body": {
+          "ja": "【デモ】館内禁煙、22:00以降は静かに過ごす設定です。設備・営業時間・ルールは架空の内容です。アレルギーやその他の相談は、次の画面に必ず記入してください。",
+          "en": "DEMO: The sample property is smoke-free indoors, with quiet hours after 22:00. Facilities, hours and rules are fictional. Please enter allergies or other requests on the next screen."
+        },
+        "audience": "all"
+      },
+      {
+        "id": "dinner",
+        "audience": "dinner",
+        "title": {
+          "ja": "夕食をご予約のお客様へ",
+          "en": "For guests with dinner"
+        },
+        "body": {
+          "ja": "【仮置き・デモ】夕食の開始時刻と会場はフロントでご案内します。食物アレルギーなどの相談は質問欄からお知らせください。対応できるかはスタッフの確認が必要です。",
+          "en": "DRAFT DEMO: Reception will confirm the dinner time and location. Please use the question section to tell us about food allergies. Staff must confirm whether requests can be accommodated."
+        }
+      },
+      {
+        "id": "late-entry",
+        "audience": "late",
+        "title": {
+          "ja": "夜間のご到着について",
+          "en": "Arriving at night"
+        },
+        "body": {
+          "ja": "【仮置き・デモ】夜間の入館方法は、スタッフが到着予定を確認したうえで個別にご案内します。この画面だけでは夜間到着は承認されません。",
+          "en": "DRAFT DEMO: Staff will confirm your arrival time and provide entry instructions individually. Viewing this page does not approve late check-in."
+        }
+      }
+    ],
+    "arrivalSlots": [
+      {
+        "id": "15-16",
+        "label": {
+          "ja": "15:00–16:00",
+          "en": "15:00–16:00"
+        }
+      },
+      {
+        "id": "16-17",
+        "label": {
+          "ja": "16:00–17:00",
+          "en": "16:00–17:00"
+        }
+      },
+      {
+        "id": "17-18",
+        "label": {
+          "ja": "17:00–18:00",
+          "en": "17:00–18:00"
+        }
+      },
+      {
+        "id": "18-19",
+        "label": {
+          "ja": "18:00–19:00",
+          "en": "18:00–19:00"
+        }
+      },
+      {
+        "id": "19-20",
+        "label": {
+          "ja": "19:00–20:00",
+          "en": "19:00–20:00"
+        }
+      },
+      {
+        "id": "late",
+        "label": {
+          "ja": "20:00以降（夜間チェックイン希望）",
+          "en": "After 20:00 (late check-in request)"
+        }
+      },
+      {
+        "id": "unknown",
+        "label": {
+          "ja": "未定",
+          "en": "Not decided yet"
+        }
+      }
+    ]
+  }
+}
